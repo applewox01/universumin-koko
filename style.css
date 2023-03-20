@@ -1,0 +1,264 @@
+
+@keyframes hiddenToAfter {
+    from {
+        opacity: 0%;
+        right: -45%;
+    }
+    to {
+        opacity: 50%;
+        right: 5%;
+    }
+}
+
+@keyframes afterToHidden {
+    from {
+        opacity: 50%;
+        right: 5%;
+    }
+    to {
+        opacity: 0%;
+        right: -45%;
+        display: none;
+    }
+}
+
+@keyframes beforeToHidden {
+    from {
+        opacity: 50%;
+        right: 85%;
+    }
+    to {
+        opacity: 0%;
+        right: 145%;
+        display: none;
+    }
+}
+
+@keyframes hiddenToBefore {
+    from {
+        opacity: 0%;
+        right: 145%;
+    }
+    to {
+        opacity: 50%;
+        right: 85%;
+    }
+}
+
+
+@keyframes beforeToCurrent {
+    from {
+        opacity: 50%;
+        right: 85%;
+    }
+    to {
+        opacity: 100%;
+        right: 50%;
+    }
+}
+
+
+@keyframes currentToBefore {
+    from {
+        opacity: 100%;
+        right: 50%;
+    }
+    to {
+        opacity: 50%;
+        right: 85%;
+    }
+}
+
+@keyframes afterToCurrent {
+    from {
+        opacity: 50%;
+        right: 5%;
+    }
+    to {
+        opacity: 100%;
+        right: 50%;
+    }
+}
+
+@keyframes currentToAfter {
+    from {
+        opacity: 100%;
+        right: 50%;
+    }
+    to {
+        opacity: 50%;
+        right: 5%;
+    }
+}
+
+.grid {
+    display: flex;
+    height: inherit;
+}
+
+
+.beforeToCurrent {
+    top: 20%;
+    height: 50%;
+    position: fixed;
+    animation-name: beforeToCurrent;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    width: 40%;
+    background-color: lightslategray;
+    border-radius: 10% 10%;
+
+}
+
+.currentToAfter {
+    top: 20%;
+    height: 50%;
+    position: fixed;
+    animation-name: currentToAfter;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    width: 40%;
+    background-color: lightslategray;
+    border-radius: 10% 10%;
+}
+
+.afterToCurrent {
+    top: 20%;
+    height: 50%;
+    position: fixed;
+    animation-name: afterToCurrent;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    width: 40%;
+    background-color: lightslategray;
+    border-radius: 10% 10%;
+}
+
+.hiddenToAfter {
+    top: 20%;
+    height: 50%;
+    position: fixed;
+    animation-name: hiddenToAfter;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    width: 40%;
+    background-color: lightslategray;
+    border-radius: 10% 10%;
+}
+
+.hiddenToBefore {
+    top: 20%;
+    height: 50%;
+    position: fixed;
+    animation-name: hiddenToBefore;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    width: 40%;
+    background-color: lightslategray;
+    border-radius: 10% 10%;
+}
+
+.afterToHidden {
+    top: 20%;
+    height: 50%;
+    position: fixed;
+    animation-name: afterToHidden;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    width: 40%;
+    background-color: lightslategray;
+    border-radius: 10% 10%;
+}
+
+.beforeToHidden {
+    top: 20%;
+    height: 50%;
+    position: fixed;
+    animation-name: beforeToHidden;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    width: 40%;
+    background-color: lightslategray;
+    border-radius: 10% 10%;
+}
+
+.currentToBefore {
+    top: 20%;
+    height: 50%;
+    position: fixed;
+    animation-name: currentToBefore;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    width: 40%;
+    background-color: lightslategray;
+    border-radius: 10% 10%;
+}
+
+.currentToAfter {
+    top: 20%;
+    height: 50%;
+    position: fixed;
+    animation-name: currentToAfter;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    width: 40%;
+    background-color: lightslategray;
+    border-radius: 10% 10%;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+@keyframes disapper {
+    from {
+        opacity: 50%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+.disapper {
+    top: 20%;
+    height: 50%;
+    position: fixed;
+    animation-name: disapper;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+img{
+    width: fit-content;
+    height: 50%;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.divObject {
+    height: 100%;
+    width: 25%;
+}
+
+
+
+.meter {
+    opacity: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#slider {
+    width: 100%;
+}
