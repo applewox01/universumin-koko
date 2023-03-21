@@ -1,5 +1,4 @@
 
-/*entinen, jossa se tule näytön takaa siihen afteriin
 @keyframes hiddenToAfter {
     from {
         opacity: 0%;
@@ -22,40 +21,39 @@
         display: none;
     }
 }
-@keyframes afterToCurrent {
+
+@keyframes beforeToHidden {
     from {
         opacity: 50%;
-        right: 5%;
+        right: 85%;
     }
     to {
-        opacity: 100%;
-        right: 50%;
+        opacity: 0%;
+        right: 145%;
+        display: none;
     }
 }
 
-@keyframes currentToAfter {
+@keyframes hiddenToBefore {
     from {
-        opacity: 100%;
-        right: 50%;
+        opacity: 0%;
+        right: 145%;
     }
     to {
         opacity: 50%;
-        right: 5%;
+        right: 85%;
     }
 }
-*/
 
 
 @keyframes beforeToCurrent {
     from {
         opacity: 50%;
-        right: 145%;
-        height: 0%;
+        right: 85%;
     }
     to {
         opacity: 100%;
         right: 50%;
-        height: 50%;
     }
 }
 
@@ -64,25 +62,21 @@
     from {
         opacity: 100%;
         right: 50%;
-        height: 50%;
     }
     to {
         opacity: 50%;
-        right: 145%;
-        height: 0%;
+        right: 85%;
     }
 }
 
 @keyframes afterToCurrent {
     from {
-        opacity: 0%;
-        right: -45%;
-        height: 50%;
+        opacity: 50%;
+        right: 5%;
     }
     to {
         opacity: 100%;
         right: 50%;
-        height: 50%;
     }
 }
 
@@ -90,21 +84,12 @@
     from {
         opacity: 100%;
         right: 50%;
-        height: 50%;
     }
     to {
-        opacity: 0%;
-        right: -45%;
-        height: 100%;
+        opacity: 50%;
+        right: 5%;
     }
 }
-
-body {
-    background-image: linear-gradient(blue, white,);
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-}
-
 
 .grid {
     display: flex;
@@ -114,6 +99,7 @@ body {
 
 .beforeToCurrent {
     top: 20%;
+    height: 50%;
     position: fixed;
     animation-name: beforeToCurrent;
     animation-duration: 2s;
@@ -126,6 +112,7 @@ body {
 
 .currentToAfter {
     top: 20%;
+    height: 50%;
     position: fixed;
     animation-name: currentToAfter;
     animation-duration: 2s;
@@ -137,6 +124,7 @@ body {
 
 .afterToCurrent {
     top: 20%;
+    height: 50%;
     position: fixed;
     animation-name: afterToCurrent;
     animation-duration: 2s;
@@ -148,6 +136,7 @@ body {
 
 .hiddenToAfter {
     top: 20%;
+    height: 50%;
     position: fixed;
     animation-name: hiddenToAfter;
     animation-duration: 2s;
@@ -159,6 +148,7 @@ body {
 
 .hiddenToBefore {
     top: 20%;
+    height: 50%;
     position: fixed;
     animation-name: hiddenToBefore;
     animation-duration: 2s;
@@ -170,6 +160,7 @@ body {
 
 .afterToHidden {
     top: 20%;
+    height: 50%;
     position: fixed;
     animation-name: afterToHidden;
     animation-duration: 2s;
@@ -181,7 +172,7 @@ body {
 
 .beforeToHidden {
     top: 20%;
-
+    height: 50%;
     position: fixed;
     animation-name: beforeToHidden;
     animation-duration: 2s;
@@ -193,6 +184,7 @@ body {
 
 .currentToBefore {
     top: 20%;
+    height: 50%;
     position: fixed;
     animation-name: currentToBefore;
     animation-duration: 2s;
@@ -204,6 +196,7 @@ body {
 
 .currentToAfter {
     top: 20%;
+    height: 50%;
     position: fixed;
     animation-name: currentToAfter;
     animation-duration: 2s;
@@ -230,6 +223,7 @@ body {
 
 .disapper {
     top: 20%;
+    height: 50%;
     position: fixed;
     animation-name: disapper;
     animation-duration: 2s;
@@ -253,7 +247,7 @@ img{
 }
 
 .divObject {
-    height: inherit;
+    height: 100%;
     width: 25%;
 }
 
@@ -266,5 +260,5 @@ img{
 }
 
 #slider {
-    width: inherit;
+    width: 100%;
 }

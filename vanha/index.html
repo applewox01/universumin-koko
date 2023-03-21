@@ -8,7 +8,7 @@
     <link href="style.css" rel="stylesheet">
     <title>universumin koko</title>
 </head>
-<body class="light">
+<body>
     <audio loop id="music">
         <source src="music.mp3" type="audio/mp3">
     </audio>
@@ -21,14 +21,13 @@
     <h1>Universumin koko - lyhyt versio</h1>
     <p>Scroll wheel tai slideri. Nuolinäppäimet: vasen, oikea. <a href="https://htwins.net/scale2/">https://htwins.net/scale2/</a></p>
     <input type="range" min="1" max="20" id="slider" value="0" hidden>
-
     <div style="width: 100%; display: block; " id="objects">
-        <div id="current" class="afterToCurrent" gradient="light">
+        <div id="current" class="afterToCurrent">
             <p class="meter">0.000 000 001 yoctometriä (teoreettinen)</p>
             <div class="grid">
                 <div class="divObject">
                 <img alt="image" src="images/qufoam.jpg">
-                <p>Kvantti vaahto</p>
+                <p>Kvantti "vaahto"</p>
             </div>
             <div class="divObject">
                 <img alt="image" src="images/plength.PNG">
@@ -36,12 +35,7 @@
             </div>
             </div>
         </div>
-        <div id="after" class="hidden" gradient="light">
-            <p class="meter">0.000 001 yoctometriä (teoreettinen)</p>
-            <div class="grid">
-            </div>
-        </div>
-        <div id="" class="hidden" gradient="light">
+        <div id="after" class="hiddenToAfter">
             <p class="meter">1 yoctometriä</p>
             <div class="grid">
                 <div class="divObject">
@@ -50,7 +44,7 @@
             </div>
             </div>
         </div>
-        <div id="" class="hidden" gradient="light">
+        <div id="" class="hidden">
             <p class="meter">noin 1 zeptometriä</p>
             <div class="grid">
                 <div class="divObject">
@@ -59,7 +53,7 @@
             </div>
             </div>
         </div>
-        <div id="" class="hidden" gradient="light">
+        <div id="" class="hidden">
             <p class="meter">noin 100 femtometriä</p>
             <div class="grid">
                 <div class="divObject">
@@ -76,7 +70,7 @@
             </div>
             </div>
         </div>
-        <div id="" class="hidden" gradient="light">
+        <div id="" class="hidden">
             <p class="meter">noin 1 picometriä</p>
             <div class="grid">
             <div class="divObject">
@@ -93,20 +87,7 @@
             </div>
         </div>
         </div>
-        <div id="" class="hidden" gradient="light">
-            <p class="meter">noin 2 metriä</p>
-            <div class="grid">
-            <div class="divObject">
-                <img alt="image" src="images/radio.gif">
-                <p>FM radio aalto</p>
-            </div>
-            <div class="divObject">
-                <img alt="image" src="images/ihminen.jpg">
-                <p>Ihminen</p>
-            </div>
-        </div>
-        </div>
-        <div id="" class="hidden" gradient="dark">
+        <div id="" class="hidden">
             <p class="meter">noin 1 400 000 000 kilometriä</p>
             <div class="grid">
                 <div class="divObject">
@@ -119,7 +100,7 @@
             </div>
         </div>
     </div>
-    <div id="" class="hidden" gradient="dark">
+    <div id="" class="hidden">
         <p class="meter">noin 38 miljardia kilometriä</p>
         <div class="grid">
             <div class="divObject">
@@ -128,7 +109,7 @@
         </div>
     </div>
 </div>
-<div id="" class="hidden" gradient="dark">
+<div id="" class="hidden">
     <p class="meter">noin 300 miljoonaa valovuotta</p>
     <div class="grid">
         <div class="divObject">
@@ -137,7 +118,7 @@
     </div>
 </div>
 </div>
-    <div id="" class="hidden" gradient="dark">
+    <div id="" class="hidden">
         <p class="meter">noin 52 850-110 000 valovuotta</p>
         <div class="grid">
             <div class="divObject">
@@ -150,7 +131,7 @@
         </div>
     </div>
 </div>
-        <div id="" class="hidden" gradient="dark">
+        <div id="" class="hidden">
             <p class="meter">noin 93^10 valovuotta</p>
             <div class="grid">
                 <div class="divObject">
@@ -163,15 +144,6 @@
             </div>
         </div>
     </div>
-    <div id="" class="hidden" gradient="dark">
-        <p class="meter">??????</p>
-        <div class="grid">
-            <div class="divObject">
-            <img alt="image" src="images/universeplus.PNG">
-            <p>Maailmankaikkeus</p>
-        </div>
-    </div>
-</div>
 </div>
 </body>
 </html>

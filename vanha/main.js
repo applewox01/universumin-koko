@@ -39,7 +39,7 @@ function forward() {
         cooldown = true;
     let before = document.getElementById("before");
     if (before != null) {
-    before.className = "hidden";
+    before.className = "beforeToHidden";
     before.id = "";
     }
     current.className = "currentToBefore";
@@ -52,14 +52,9 @@ function forward() {
     if (after != null) {
         after.className = "afterToCurrent";
         after.id = "current";
-        if (after.getAttribute("gradient") == "light") {
-            document.body.className = "light";
-        } else {
-            document.body.className = "dark";
-        };
     if (after.nextElementSibling != null) {
         let next = after.nextElementSibling;
-        next.className = "hidden";
+        next.className = "hiddenToAfter";
         next.id = "after";
     }
 };
@@ -73,7 +68,7 @@ function backward() {
         cooldown = true;
     let after = document.getElementById("after");
     if (after != null) {
-        after.className = "hidden";
+        after.className = "afterToHidden";
         after.id = "";
     }
     current.id = "after";
@@ -86,14 +81,9 @@ function backward() {
     if (before != null) {
         before.className = "beforeToCurrent";
         before.id = "current";
-        if (before.getAttribute("gradient") == "light") {
-            document.body.className = "light";
-        } else {
-            document.body.className = "dark";
-        };
     if (before.previousElementSibling != null) {
         let next = before.previousElementSibling;
-        next.className = "hidden";
+        next.className = "hiddenToBefore";
         next.id = "before";
 
     }
